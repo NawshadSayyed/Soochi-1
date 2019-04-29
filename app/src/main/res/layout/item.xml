@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fefefe"
+        android:orientation="vertical">
+
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_sale_1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@layout/button_shadow"
+            android:backgroundTint="#F2E394" />
+
+
+        <ScrollView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view2"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    card_view:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/hint2"
+                            android:layout_width="189dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <EditText
+                                android:id="@+id/itemname"
+                                android:layout_width="172dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="#fefefe"
+                                android:hint="Item Name" />
+
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <AutoCompleteTextView
+                            android:id="@+id/unit"
+                            android:layout_width="130dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="#fef"
+                            android:hint="SELECT UNIT" />
+
+                    </LinearLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/hint7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="65dp">
+
+                        <EditText
+                            android:id="@+id/barcode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/hint1"
+                            android:layout_marginTop="55dp"
+                            android:hint="Item Code/Barcode"
+                            android:inputType="number" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/hint9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="130dp">
+
+                        <EditText
+                            android:id="@+id/hsn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/hint1"
+                            android:layout_marginTop="130dp"
+                            android:inputType="number"
+                            android:hint="HSN/SAC Code" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/card_view"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="190dp"
+                            card_view:cardCornerRadius="8dp">
+
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/hint1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp">
+
+                                <EditText
+                                    android:id="@+id/sale"
+                                    android:layout_width="358dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:inputType="number"
+                                    android:background="#fefefe"
+                                    android:hint="Sale price" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/hint5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="55dp">
+
+                                <EditText
+                                    android:layout_width="171dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignTop="@+id/hint1"
+                                    android:id="@+id/purchase"
+                                    android:layout_marginTop="55dp"
+                                    android:inputType="number"
+                                    android:hint="Purchase Price" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/hint4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="200dp"
+                                android:layout_marginTop="50dp"
+                                android:layout_marginEnd="1dp"
+                                android:layout_marginBottom="1dp">
+
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/tax"
+                                    android:layout_width="129dp"
+                                    android:layout_height="49dp"
+                                    android:hint="Tax type" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/hint6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="120dp">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/rate"
+                                    android:layout_width="327dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignTop="@+id/hint1"
+                                    android:layout_marginTop="130dp"
+                                    android:hint="Tax Rate" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                        </android.support.v7.widget.CardView>
+
+
+
+                    </LinearLayout>
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fefefe"
+            android:layout_weight="0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="37dp">
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:background="#fef"
+                    android:text="Cancel" />
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="65dp"
+                    android:background="#fef"
+                    android:text="Save" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

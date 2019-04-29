@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "296176826526",
+    "firebase_url": "https://trail-107db.firebaseio.com",
+    "project_id": "trail-107db",
+    "storage_bucket": "trail-107db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296176826526:android:6d2b635ae02a3ccd",
+        "android_client_info": {
+          "package_name": "com.example.prathamesh.signinup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "296176826526-88hrl0n58r22fh9lauepgqnnb9j1nk7k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFXXbFhc62sB9oH6BTlviqUFrF26QS5NI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

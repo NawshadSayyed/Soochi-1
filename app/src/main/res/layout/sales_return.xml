@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_sales_return"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp" />
+
+
+    <ScrollView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp">
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+
+                android:layout_width="wrap_content"
+                android:layout_height="190dp"
+                card_view:cardCornerRadius="8dp">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/hint1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/name"
+                        android:layout_width="358dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#fefefe"
+                        android:focusable="false"
+                        android:hint="Party(Customer)*" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/hint5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="65dp">
+
+                    <AutoCompleteTextView
+                        android:layout_width="171dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/hint1"
+                        android:id="@+id/invoice"
+                        android:layout_marginTop="55dp"
+                        android:focusable="false"
+                        android:inputType="number"
+                        android:hint="Invoice No" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/hint4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="1dp">
+
+
+                    <EditText
+                        android:id="@+id/date"
+                        android:layout_width="129dp"
+                        android:layout_height="49dp"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="Return Date" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/hint6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="130dp">
+
+                    <EditText
+                        android:id="@+id/return_invoice"
+                        android:layout_width="327dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/hint1"
+                        android:inputType="number"
+                        android:layout_marginTop="130dp"
+                        android:hint="Return Invoice" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                card_view:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/paymentType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Payment Type" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/payment"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:focusable="false"
+                            android:gravity="center" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/referenceNumber"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:scrollbars="vertical"
+                tools:layout_editor_absoluteX="0dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fefefe"
+        android:layout_weight="0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp">
+
+            <Button
+                android:id="@+id/savenew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:background="#fef"
+                android:text="Save and New" />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:background="#fef"
+                android:text="Save" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

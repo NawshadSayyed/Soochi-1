@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.prathamesh.Authentication">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+            <activity android:name="com.example.prathamesh.Authentication.WelcomeActivity">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
+
+        <activity android:name="com.example.prathamesh.Authentication.signin">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="MainActivity.MainActivity">
+        </activity>
+        <activity android:name="Purchase.purchase">
+
+        </activity>
+        <activity
+            android:name="com.example.prathamesh.Authentication.signup"
+            android:label="@string/title_activity_signup">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="Sale.Sale" />
+        <activity android:name="Extra.AllParties" />
+        <activity android:name="Extra.Cardname" />
+        <activity android:name="Extra.Bill" />
+        <activity android:name="ProductMaster.Item" />
+        <activity android:name="ProductMaster.ItemList" />
+        <activity android:name="Sale.AddLineItem" />
+        <activity android:name="Purchase.AddLineItem" />
+        <activity android:name="Returns.ReturnsSale" />
+        <activity android:name="Returns.ReturnsPurchase" />
+        <activity android:name="Tax.Taxlist" />
+        <activity android:name="Expenses.Expense" />
+        <activity android:name="Expenses.Expense_List" />
+        <activity android:name="Cash.Cash" />
+        <activity android:name="Cheque.Cheque" />
+        <activity android:name="Bank.Bank" />
+        <activity android:name="Bank.IBank" />
+        <activity android:name="Company.Company" />
+
+    </application>
+
+</manifest>

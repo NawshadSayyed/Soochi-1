@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fefefa"
+    android:elevation="0dp"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="24dp"
+            android:background="@layout/button_shadow"
+            android:backgroundTint="#F2E394"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/logo">
+
+            <EditText
+                android:id="@+id/title"
+                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:hint="Enter Company's Name"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="save"/>
+        </android.support.v7.widget.Toolbar>
+
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:background="@layout/smooth_corners"
+            android:text="+ Tap to add a SALE"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_main"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="44dp"
+            android:text="Purchase"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button11" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+
+
+
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="8dp"
+            android:text="Dashboard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/button7"
+            app:layout_constraintTop_toBottomOf="@+id/button11" />
+
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="24dp"
+            android:text="Items"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button7" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+
+
+            android:text="Parties"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/button10"
+            app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="56dp"
+
+            android:backgroundTint="#D8E2DC"
+            android:src="@drawable/add"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button9" />
+
+        <android.support.design.widget.BottomNavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/navigation"
+            android:layout_width="360dp"
+            android:layout_height="63dp"
+
+            android:layout_gravity="start"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="8dp"
+            android:background="@layout/smooth_corners"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fab"
+            app:menu="@layout/my_navigation_items" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nv"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#fefefa"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@layout/navigation_menu">
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

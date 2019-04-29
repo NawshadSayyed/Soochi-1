@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Soochi</string>
+    <string name="title_activity_signup">signup</string>
+    <string name="email_id">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="new1">Create a New Account</string>
+    <string name="login1">Sign Up</string>
+    <string name="new2">Already a member? Sign In</string>
+    <string name="failed">Failed</string>
+    <string name="code">Code</string>
+    <string name="company">Enter your company\'s name</string>
+    <string name="next">next</string>
+    <string name="skip">skip</string>
+    <string name="start">Sign In</string>
+    <string name="Open">open</string>
+    <string name="Close">close</string>
+    <string name="soochi">Soochi</string>
+    <string name="party">Party</string>
+    <string-array name="brew_array">
+        <item>Add a new party</item>
+        <item>Callisto</item>
+    </string-array>
+    <string name="username">Save</string>
+    <string name="cancel">Cancel</string>
+    <string-array name="party">
+        <item>Add a new party</item>
+        <item>Other</item>
+    </string-array>
+</resources>

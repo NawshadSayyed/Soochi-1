@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="70dp"
+    android:layout_width="match_parent" >
+
+        <item android:id="@+id/add_party"
+              android:title="Add Company" />
+        <item android:id="@+id/payment_in"
+              android:title="Help with the App" />
+        <item android:id="@+id/expense"
+              android:title="Expense" />
+
+</menu>
+

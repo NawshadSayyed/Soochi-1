@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content" android:layout_width="wrap_content">
+
+
+    <item android:id="@+id/allparties"
+        android:title="All parties"/>
+    <item android:id="@+id/items"
+        android:title="Items"/>
+    <item android:id="@+id/taxlist"
+          android:title="Tax List"/>
+    <item android:id="@+id/bank"
+        android:title="Bank Accounts"/>
+    <item android:id="@+id/cash"
+        android:title="Cash in Hand"/>
+    <item android:id="@+id/expenses"
+        android:title="Expenses"/>
+    <item android:id="@+id/cheque"
+        android:title="Cheques"/>
+    <item android:id="@+id/stock"
+        android:title="Contact Soochi"/>
+    <item android:id="@+id/accounts"
+        android:title="Log out"/>
+    <item android:id="@+id/calculator"
+        android:title="Open Calculator"/>
+
+</menu>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
